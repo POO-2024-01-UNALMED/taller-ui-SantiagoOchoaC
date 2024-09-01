@@ -140,7 +140,7 @@ public class Calculator extends VBox implements EventHandler<ActionEvent>{
 	                String resultado = operar(number1, number2, operator);
 	                displayText.setText(resultado);
 	                // RESETEAMOS LOS VALORES.
-	                number1 = null; // SE PUEDE ASIGNAR EL RESULTADO PARA SEGUIR CON LA OPERACION. 
+	                number1 = resultado; // SE PUEDE ASIGNAR EL RESULTADO PARA SEGUIR CON LA OPERACION. 
 	                number2 = null;
 	                operator = null;
 	            }
